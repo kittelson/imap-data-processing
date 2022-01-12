@@ -33,7 +33,8 @@ class DevConfig(Config):
     DIR_NAME_INTERIM = "1_interim"
     DIR_NAME_PROCESSED = "2_processed"
     INTERIM_GPKG_AADT = "ncdot_aadt_processed.gpkg"
-    INTERIM_GPKG_SAFEY = "ncdot_section_safety_processed.gpkg"
+    INTERIM_GPKG_SAFETY = "nc_crash_si_processed.gpkg"
+    INTERIM_GPKG_AADT_SAFETY_MERGE = "aadt_crash_merge.gpkg"
 
 
 

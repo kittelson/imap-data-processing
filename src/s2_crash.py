@@ -155,5 +155,5 @@ def run_safety_init_process():
         crash_df_fil_si_geom, geometry=crash_df_fil_si_geom.geometry,
     )
     crash_df_fil_si_geom_gdf.crs = "EPSG:4326"
-    out_file_crash_si = os.path.join(path_interim_data, DevConfig.INTERIM_GPKG_SAFEY)
+    out_file_crash_si = os.path.join(path_interim_data, DevConfig.INTERIM_GPKG_SAFETY)
     crash_df_fil_si_geom_gdf.to_file(out_file_crash_si, driver="GPKG")
