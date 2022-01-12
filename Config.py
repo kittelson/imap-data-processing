@@ -28,6 +28,11 @@ class DataConfig(Config):
     DIR_HPMS = "hpms_northcarolina2018"
     # Name of the HPMS shapefile (.shp) in the DIR_HPMS directory
     SHAPEFILE_HPMS = "NorthCarolina_PR_2018.shp"
+    # Name of folder/directory containing the SEG_T3_All Routes_Revised data
+    DIR_SEG_T3 = "SEG_T3_All Routes_Revised"
+    # Name of the SEG_T3 shapefile in the DIR_SEG_T3 directory
+    SHAPEFILE_SEG_T3 = "SEG_T3_PADT_All_Routes_Revised.shp"
+
 
 
 class DevConfig(Config):
@@ -40,6 +45,7 @@ class DevConfig(Config):
     INTERIM_GPKG_SAFETY = "nc_crash_si_processed.gpkg"
     INTERIM_GPKG_AADT_SAFETY_MERGE = "aadt_crash_merge.gpkg"
     INTERIM_CSV_NHS_STC_ROUTES = "nhs_hpms_stc_routes.csv"
+    PROCESSED_PADT_ON_INCIDENT_FACTOR = "padt_on_inc_fac_gis.gpkg"
 
 
 
