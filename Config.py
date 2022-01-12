@@ -32,6 +32,12 @@ class DataConfig(Config):
     DIR_SEG_T3 = "SEG_T3_All Routes_Revised"
     # Name of the SEG_T3 shapefile in the DIR_SEG_T3 directory
     SHAPEFILE_SEG_T3 = "SEG_T3_PADT_All_Routes_Revised.shp"
+    # Name of the folder/directory containing the CensusTract2010.shp shapefile
+    DIR_CENSUS_TRACT = "CensusTract2010"
+    # Name of the Census Tract shapefile in the DIR_CENSUS_TRACT folder/directory
+    SHAPEFILE_CENSUS_TRACT = "CensusTract2010.shp"
+    # Name of the CSV file containing the combined flow by census tract data
+    CSV_CENSUS_COMBINED_FLOW = "Combined_FlowByCensusTract.csv"
 
 
 
@@ -46,6 +52,7 @@ class DevConfig(Config):
     INTERIM_GPKG_AADT_SAFETY_MERGE = "aadt_crash_merge.gpkg"
     INTERIM_CSV_NHS_STC_ROUTES = "nhs_hpms_stc_routes.csv"
     PROCESSED_PADT_ON_INCIDENT_FACTOR = "padt_on_inc_fac_gis.gpkg"
+    PROCESSED_CENSUS_GPD_GROWTH = "census_gpd_growth.gpkg"
 
 
 
