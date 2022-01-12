@@ -24,6 +24,10 @@ class DataConfig(Config):
     FIELD_GIS_ROUTE = "gis_route"
     # Field representing "total crashes" in the SHAPEFILE_SAFETY shapefile
     FIELD_TOTAL_CNT = "crash_cnt"
+    # Name of the folder/directory containing the HPMS shapefile
+    DIR_HPMS = "hpms_northcarolina2018"
+    # Name of the HPMS shapefile (.shp) in the DIR_HPMS directory
+    SHAPEFILE_HPMS = "NorthCarolina_PR_2018.shp"
 
 
 class DevConfig(Config):
@@ -35,6 +39,7 @@ class DevConfig(Config):
     INTERIM_GPKG_AADT = "ncdot_aadt_processed.gpkg"
     INTERIM_GPKG_SAFETY = "nc_crash_si_processed.gpkg"
     INTERIM_GPKG_AADT_SAFETY_MERGE = "aadt_crash_merge.gpkg"
+    INTERIM_CSV_NHS_STC_ROUTES = "nhs_hpms_stc_routes.csv"
 
 
 

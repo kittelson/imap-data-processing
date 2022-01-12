@@ -10,7 +10,7 @@ from src.utils import get_project_root
 from src.utils import reorder_columns
 import numpy as np
 from src.s2_crash import get_severity_index
-from Config import DataConfig, DevConfig
+from Config import DevConfig
 
 
 def merge_aadt_crash(aadt_gdf_, crash_gdf_, crash_num_years=5, quiet=True):
