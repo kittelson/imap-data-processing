@@ -51,8 +51,12 @@ class DevConfig(Config):
     INTERIM_GPKG_SAFETY = "nc_crash_si_processed.gpkg"
     INTERIM_GPKG_AADT_SAFETY_MERGE = "aadt_crash_merge.gpkg"
     INTERIM_CSV_NHS_STC_ROUTES = "nhs_hpms_stc_routes.csv"
+    INTERIM_CSV_AADT_BUT_NO_CRASH = "aadt_but_no_crash_route_set.csv"
     PROCESSED_PADT_ON_INCIDENT_FACTOR = "padt_on_inc_fac_gis.gpkg"
     PROCESSED_CENSUS_GPD_GROWTH = "census_gpd_growth.gpkg"
+    PROCESSED_INCIDENT_FACTOR_SCALED = "inc_fac_si_scaled.gpkg"
+    PROCESSED_DIR_MISSING_CRASHES = "missing_crashes"
+    PROCESSED_SHAPEFILE_MISSING_CRASHES = "missing_crash.shp"
 
 
 
