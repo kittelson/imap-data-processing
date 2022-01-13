@@ -33,10 +33,10 @@ def run_process_incident_factor():
         .query("route_class in ['Interstate', 'US Route', 'NC Route']")
     )
     crash_df_fil_si_geom_gdf_nan = crash_aadt_fil_si_geom_gdf.query(
-        " severity_index.isna()"
+        " severity_index.isna()", engine="python"
     )
     crash_df_fil_si_geom_gdf_no_nan = crash_aadt_fil_si_geom_gdf.query(
-        "~ severity_index.isna()"
+        "~ severity_index.isna()", engine="python"
     )
     crash_df_fil_si_geom_gdf_nan.to_csv(path_aadt_but_no_crash_route_set)
 

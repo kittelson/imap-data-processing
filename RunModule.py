@@ -5,6 +5,7 @@ from src.s4_get_info_on_nhs_stc import run_get_info_on_nhs_stc
 from src.s5_padt import run_padt_processing
 from src.s6_census_growth_rate import run_process_census_data
 from src.s7_if_si_calc import run_process_incident_factor
+from src.s8_merge_all_data import run_merge_all_data
 if __name__ == "__main__":
     # ----------- Execute the code
     # - Step 1: Process NCDOT AADT Data
@@ -21,4 +22,6 @@ if __name__ == "__main__":
     run_process_census_data()
     # - Step 7: Incident Factor Scaling
     run_process_incident_factor()
+    # - Step 8: Merge all data
+    run_merge_all_data()
 
