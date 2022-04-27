@@ -1,5 +1,7 @@
 data/0_raw/*
 data/1_interim/*
 data/2_processed/*
+output/*
+output_2020_aadt/*
 .idea/
 __pycache__/

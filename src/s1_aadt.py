@@ -78,7 +78,7 @@ def test_aadt_df(aadt_gdf_):
         If there is a missing value for either "route_id", "begin_mp", "end_mp", or "aadt_2018"
     """
     assert (
-        aadt_gdf_[["route_id", "begin_mp", "end_mp", DataConfig.FIELD_AADT, DataConfig.FIELD_AADTT]].isna().sum().sum() == 0
+        aadt_gdf_[["route_id", "begin_mp", "end_mp", DataConfig.FIELD_AADT]].isna().sum().sum() == 0
     ), (
         'Need to remove rows with missing "route_id", "begin_mp", "end_mp", "' + DataConfig.FIELD_AADTT + '", or "' + DataConfig.FIELD_AADT + '"'
     )

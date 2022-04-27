@@ -9,21 +9,29 @@ class DataConfig(Config):
     pass
     # ------- Files and Directories ---------
     # Name of folder/directory containing AADT Traffic Segment Data
-    DIR_AADT_SEGMENTS = "NCDOT_2020_Traffic_Segment_Shapefile_Description"
+    # DIR_AADT_SEGMENTS = "NCDOT_2020_Traffic_Segment_Shapefile_Description"
+    DIR_AADT_SEGMENTS = "NCDOT 2018 Traffic Segments Shapefile Description"
     # Name of AADT Segments shapefile (.shp) in the DIR_AADT_SEGMENTS folder/directory
-    SHAPEFILE_AADT = "NCDOT_AADT_Segments.shp"
+    # SHAPEFILE_AADT = "NCDOT_AADT_Segments.shp"
+    SHAPEFILE_AADT = "NCDOT_AADT_Traffic_Segments.shp"
     # Field/column name identifier for AADT in the SHAPEFILE_AADT shapefile (e.g. AADT_2020)
-    FIELD_AADT = "aadt_2020"
+    # FIELD_AADT = "aadt_2020"
+    FIELD_AADT = "aadt_2018"
     # Field/column name identifier for AADTT (Truck AADT) in the SHAPEFILE_AADT shapefile (e.g. AADTT_2020)
-    FIELD_AADTT = "aadtt_2020"
+    # FIELD_AADTT = "aadtt_2020"
+    FIELD_AADTT = "aadtt2018"
     # Name of Section Safety Scores directory (e.g. SectionScores_2015_2019 or SectionSafetyScores_2016_2020)
-    DIR_SAFETY_SCORES = "SectionSafetyScores_2016_2020"
+    # DIR_SAFETY_SCORES = "SectionSafetyScores_2016_2020"
+    DIR_SAFETY_SCORES = "SectionScores_2015_2019"
     # Name of Section Safety Scores shapefile in DIR_SAFETY_SCORES (e.g. SectionScores_2015_2019.shp)
-    SHAPEFILE_SAFETY = "SectionSafetyScores_2016_2020.shp"
+    # SHAPEFILE_SAFETY = "SectionSafetyScores_2016_2020.shp"
+    SHAPEFILE_SAFETY = "SectionScores_2015_2019.shp"
     # Field representing the GIS Route identifier in the SHAPEFILE_SAFETY shapefile
-    FIELD_GIS_ROUTE = "gis_route"
+    # FIELD_GIS_ROUTE = "gis_route"
+    FIELD_GIS_ROUTE = "route_gis"
     # Field representing "total crashes" in the SHAPEFILE_SAFETY shapefile
-    FIELD_TOTAL_CNT = "crash_cnt"
+    # FIELD_TOTAL_CNT = "crash_cnt"
+    FIELD_TOTAL_CNT = "total_cnt"
     # Name of the folder/directory containing the HPMS shapefile
     DIR_HPMS = "hpms_northcarolina2018"
     # Name of the HPMS shapefile (.shp) in the DIR_HPMS directory
@@ -38,7 +46,14 @@ class DataConfig(Config):
     SHAPEFILE_CENSUS_TRACT = "CensusTract2010.shp"
     # Name of the CSV file containing the combined flow by census tract data
     CSV_CENSUS_COMBINED_FLOW = "Combined_FlowByCensusTract.csv"
-
+    # Name of the directory/folder containing the IMAP routes shapefile
+    DIR_NAME_IMAP_ROUTES = "_IMAP_Routes"
+    # Name of the shapefile containing the IMAP routes in the directory specified in DIR_NAME_IMAP_ROUTES
+    SHAPEFILE_IMAP_ROUTES = "_IMAP_Routes.shp"
+    # Name of the directory/folder containing the NCDOT Division Boundaries
+    DIR_NAME_NCDOT_DIVISIONS = "NCDOT_Division_Boundaries-shp"
+    # Name of the shapefile containing the IMAP routes in the directory specified in DIR_NAME_NCDOT_DIVISIONS
+    SHAPEFILE_NCDOT_DIVISIONS = "NCDOT_Division_Boundaries.shp"
 
 
 class DevConfig(Config):
